@@ -1,36 +1,29 @@
 <template>
   <div id="app">
-asdf
+    <Competitions></Competitions>
   </div>
 </template>
 
 <script>
+  import Competitions from './modules/competitions/components/Container.vue'
+
   export default {
-    name: 'app'
+    name: 'app',
+    components: {
+      Competitions
+    }
   }
 </script>
 
 <style lang="scss">
   html,
-  body,
-  #app {
-    /* Height and width fallback for older browsers. */
-    height: 100%;
-    width: 100%;
-
-    /* Set the height to match that of the viewport. */
-    height: 100vh;
-
-    /* Set the width to match that of the viewport. */
-    width: 100vw;
-
-    /* Remove any browser-default margins. */
-    margin: 0;
-  }
-
-  #app {
+  body {
+    margin: 0 auto;
     background-color: #136b09;
+  }
+  #app {
     width: 100%;
     height: 100;
+    color: #ffffff;
   }
 </style>
