@@ -1,6 +1,6 @@
 <template>
   <el-container>
-    <el-header>Football-data.org API User Interface with Vue.js</el-header>
+    <el-header>football-data.org API - User Interface with Vue.js</el-header>
     <el-main>
       <List></List>
     </el-main>

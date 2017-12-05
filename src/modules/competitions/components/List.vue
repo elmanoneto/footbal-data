@@ -1,8 +1,8 @@
 <template>
   <div>
-    <el-card class="box-card" v-for="competition in competitions()">
+    <el-card class="box-card" v-for="competition in competitions()" v-bind:key="competition.id">
       <div slot="header" class="clearfix">
-        <span>{{competition.caption}}</span>
+        <h3>{{competition.caption}}</h3>
       </div>
       <ul>
         <li>Teams: {{competition.numberOfTeams}}</li>
@@ -34,7 +34,12 @@
 
     .box-card {
       display: block;
-      margin: 5px 10px;
+      margin: 10px 10px;
+      cursor: pointer;
+
+      h3 {
+        line-height: 0px;
+      }
 
       ul {
         li {

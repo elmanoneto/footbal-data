@@ -20,6 +20,7 @@
   body {
     margin: 0 auto;
     background-color: #136b09;
+    font-family: 'Source Sans Pro', sans-serif;
   }
   #app {
     width: 100%;
