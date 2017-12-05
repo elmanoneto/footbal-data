@@ -5,7 +5,7 @@ import Competitions from './../competitions/competitions.routes'
 
 let routes = {
   mode: 'history',
-  routes: [Competitions.routes]
+  routes: [...Competitions]
 }
 
 export default new VueRouter(routes)

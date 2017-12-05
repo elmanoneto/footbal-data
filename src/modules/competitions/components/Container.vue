@@ -1,10 +1,7 @@
 <template>
-  <el-container>
-    <el-header>football-data.org API - User Interface with Vue.js</el-header>
-    <el-main>
-      <List></List>
-    </el-main>
-  </el-container>
+  <div>
+    <List></List>
+  </div>
 </template>
 
 <script>

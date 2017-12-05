@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <Competitions></Competitions>
+    <el-container>
+      <el-header>football-data.org API - User Interface with Vue.js</el-header>
+      <el-main>
+        <router-view></router-view>
+      </el-main>
+    </el-container>
   </div>
 </template>
 
 <script>
-  import Competitions from './modules/competitions/components/Container.vue'
-
   export default {
     name: 'app',
-    components: {
-      Competitions
-    }
   }
 </script>
 

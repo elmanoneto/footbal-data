@@ -1,5 +1,11 @@
-import Competitions from './components/Container.vue'
+import Container from './components/Container'
+import Competition from './components/Competition'
 
-export default {
-  routes: {path: '/', component: Competitions, alias: '/competitions'}
-}
+export default [
+  {
+    path: '/', 
+    component: Container, 
+    alias: '/competitions',
+  },
+  {path: '/competitions/:id', component: Competition, name: 'competition'}
+]

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-card class="box-card" v-for="competition in competitions()" v-bind:key="competition.id">
+    <el-card class="box-card" v-for="competition in competitions()" :key="competition.id" @click.native="goCompetition(competition.id)">
       <div slot="header" class="clearfix">
         <h3>{{competition.caption}}</h3>
       </div>
@@ -22,7 +22,11 @@
     methods: {
       ...mapGetters({
         competitions: 'fetchCompetitions'
-      })
+      }),
+
+      goCompetition: function(id) {
+        this.$router.push({name: 'competition', params: {id: id}})
+      }
     }
   }
 </script>
