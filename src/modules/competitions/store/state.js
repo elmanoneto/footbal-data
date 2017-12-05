@@ -1,3 +1,4 @@
 export default {
-  competitions: []
+  competitions: [],
+  teamsCompetitions: []
 }

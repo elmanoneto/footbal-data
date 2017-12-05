@@ -26,5 +26,13 @@
     width: 100%;
     height: 100;
     color: #ffffff;
+
+    .el-container {
+      .el-header {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 30px;
+      }
+    }
   }
 </style>

@@ -24,13 +24,3 @@
   }
 </script>
 
-<style lang="scss">
-  .el-container {
-    .el-header {
-      text-align: center;
-      margin: 10px 0;
-      font-size: 30px;
-    }
-  }
-</style>
-

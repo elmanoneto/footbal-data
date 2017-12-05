@@ -7,5 +7,6 @@ export default [
     component: Container, 
     alias: '/competitions',
   },
-  {path: '/competitions/:id', component: Competition, name: 'competition'}
+  {path: '/competitions/:id', component: Competition, name: 'competition'},
+  {path: '*', component: Competition}
 ]
